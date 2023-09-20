@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-jdpe
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-bosr-tenant/mc-quality-dashboard/backend-quality-dashboard-jdpe@sha256:cc9241849edabf889c1c88b7603d83a2c3b99db349051aacc454a1fe2f0d5274
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
